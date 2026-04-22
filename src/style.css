@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .radio-group-label {
+    @apply flex items-center gap-3 p-3 rounded-xl border-[1.5px] border-slate-200 cursor-pointer transition-all bg-slate-50 select-none;
+  }
+  .radio-group-label:has(input:checked) {
+    @apply border-green-500 bg-green-50/40;
+  }
+  .radio-circle {
+    @apply w-[18px] h-[18px] rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 transition-colors;
+  }
+  .radio-group-label:has(input:checked) .radio-circle {
+    @apply border-green-500;
+  }
+  .radio-dot {
+    @apply w-2 h-2 rounded-full bg-green-500 hidden;
+  }
+  .radio-group-label:has(input:checked) .radio-dot {
+    @apply block;
+  }
+}
