@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const WHATSAPP_NUMBER = "61476997621";
-const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbywxCLH2MEjdElkXr-LRk-PASKypUbuwEgoNjyGycimTzcL5jbMABZ11l5jPxpVO2xu/exec";
+const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwBP3lngeJ4Bz5JIqaZ9bjsMvsIa22lZ5Bwst3kzjkGwijCzA_ikgAkoKpZdq1hfJjh/exec";
 
 const steps = [
   {
